@@ -21,7 +21,7 @@ function iniciarJuego(nombre, cantPreg) {
     document.getElementById('pantallaInicio').style.display = 'none';
     document.getElementById('quizContainer').style.display = 'block';
 
-    fetch('tr0-2024-2025-un-munt-de-preguntes-Simran0496/back/getPreguntas.php')
+    fetch('../back/getPreguntas.php')
         .then(respostes => {
             if (!respostes.ok) {
                 throw new Error('Network response was not ok');

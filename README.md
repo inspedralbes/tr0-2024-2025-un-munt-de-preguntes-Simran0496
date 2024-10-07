@@ -530,4 +530,7 @@ document.getElementById('iniciarJuego').addEventListener('click', () => {
 });
 
 
-document.addEventListener('DOMContentLoaded', mostrarPantallaInicio);     
+document.addEventListener('DOMContentLoaded', mostrarPantallaInicio);     Quina marca de refrescos utilitza el lema 'Open Happiness'? 	Imagen 	Coca-Cola
+Pepsi
+7UP
+Fanta 	Coca-Cola

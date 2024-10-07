@@ -17,23 +17,6 @@ try {
     $consultaPreguntas = "SELECT * FROM preguntes";
     $resultadoPreguntas = $conexionBD->query($consultaPreguntas);
 
-    if ($resultadoPreguntas === false) {
-        throw new Exception("Error en la consulta: " . $conexionBD->error);
-    }
-
-    // (Resto del código...)
-} catch (Exception $e) {
-    http_response_code(500); // Cambiar el código de respuesta a 500
-    echo json_encode(['error' => $e->getMessage()]); // Devuelve el error como JSON
-} finally {
-    $conexionBD->close();
-}
-
-
-    // Consulta para obtener todas las preguntas y sus respuestas
-    $consultaPreguntas = "SELECT * FROM preguntes";
-    $resultadoPreguntas = $conexionBD->query($consultaPreguntas);
-
     if ($resultadoPreguntas->num_rows > 0) {
         // Obtener todas las preguntas en un array
         $totesPreguntes = [];
